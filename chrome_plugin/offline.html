@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>网络连接中断</title>
+  <style>
+    :root {
+      --primary: #4285f4;
+      --bg: #f8f9fa;
+      --text: #202124;
+    }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .container {
+      max-width: 350px;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      background: white;
+    }
+    h1 {
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+    .status {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 30px 0;
+    }
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 4px solid rgba(66, 133, 244, 0.2);
+      border-top: 4px solid var(--primary);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-right: 15px;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .progress-container {
+      width: 100%;
+      height: 8px;
+      background: #e8eaed;
+      border-radius: 4px;
+      margin: 25px 0;
+      overflow: hidden;
+    }
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background: var(--primary);
+      border-radius: 4px;
+      transition: width 0.3s;
+    }
+    button {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 24px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    button:hover {
+      background: #3367d6;
+      transform: translateY(-2px);
+      box-shadow: 0 2px 8px rgba(66, 133, 244, 0.3);
+    }
+    #originalUrl {
+      font-size: 0.9em;
+      color: #5f6368;
+      margin-top: 10px;
+      word-break: break-all;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🌐 网络连接中断</h1>
+    <p>系统检测到您的设备已断开互联网连接</p>
+    
+    <div class="status">
+      <div class="spinner"></div>
+      <strong>正在尝试重新连接...</strong>
+    </div>
+    
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+    
+    <p>网络恢复后将自动刷新页面</p>
+    <button id="retryBtn">立即重试</button>
+    <p id="originalUrl"></p>
+  </div>
+
+  <script src="offline.js"></script>
+</body>
+</html>

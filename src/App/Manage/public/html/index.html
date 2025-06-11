@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="keywords" content="" />
+	<meta name="description" content="公司" />
+	<!--<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" content="0">-->
+	<link rel="stylesheet" href="bower_components/zui/dist/css/zui.min.css">
+	<link rel="stylesheet" href="/css/mat.min.css">
+	<link rel="shortcut icon" href="http://img1.app.meitudata.com/meitushop/favicon.ico" type="image/x-icon" />
+	<title>McnAdmin 首页</title>
+</head>
+<body data-load-module="page.index">
+	<!-- 整体布局 Start -->
+	<div id="mat-layout" class="min-width header-fixed footer-fixed _side-fixed _side-narrow">
+		
+		<!-- 顶栏 Start -->
+		<header id="mat-header">
+			<a href="/" class="pull-left" id="mat-brand">
+				<img src="/images/mat-logo.png" class="brand-logo" />
+				<img src="/images/mat-logo-small.png" class="brand-icon" />
+				<div class="brand-title">
+					<div class="brand-text">McnAdmin</div>
+				</div>
+				<small class="version">Beta</small>
+			</a>
+			<nav id="mat-header-nav" data-dropdown="hover">
+				<ul class="nav navbar-nav pull-left">
+					<li class="mat-toggle-side">
+						<a href="javascript:;">
+							<i class="icon icon-bars"></i>
+						</a>
+					</li>
+					<li>
+						<a href="index.html" class="active">
+							<i class="icon icon-home"></i>
+							<span class="text">首页</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="icon icon-stack"></i>
+							<span class="text">内容管理</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="icon icon-bar-chart"></i>
+							<span class="text">统计分析</span>
+						</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="icon icon-picture"></i>
+							<span class="text">素材管理</span> <b class="caret"></b>
+						</a>
+						<div class="dropdown-menu" role="menu">
+							<ul class="nav">
+								<li>
+									<a href="#">
+										<i class="icon icon-shield"></i>
+										<span class="text">权限管理</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon icon-film"></i>
+										<span class="text">视频管理</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon icon-comments-alt"></i>
+										<span class="text">评论管理</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<i class="icon icon-group"></i>
+							<span class="text">用户管理</span>
+						</a>
+					</li>
+					<!-- 导航中的下拉菜单 -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<!--更多&nbsp;<b class="caret"></b>-->
+							<i class="icon icon-ellipsis-h"></i>
+						</a>
+						<div class="dropdown-menu" role="menu">
+							<ul class="nav">
+								<li>
+									<a href="#">
+										<i class="icon icon-shield"></i>
+										<span class="text">权限管理</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon icon-film"></i>
+										<span class="text">视频管理</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon icon-comments-alt"></i>
+										<span class="text">评论管理</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav pull-right">
+					<li class="dropdown">
+						<a href="#" data-toggle="dropdown">
+							<i class="icon icon-globe"></i>
+							<span class="text">Languages</span>
+						</a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">简体中文</a></li>
+							<li><a href="#">繁体中文</a></li>
+							<li><a href="#">English</a></li>
+						</ul>
+					</li>
+					<!-- 导航中的下拉菜单 -->
+					<li id="dropdown-user" class="dropdown">
+						<a href="#" data-toggle="dropdown" class="dropdown-toggle text-right" aria-expanded="true">
+							<!--<div class="username"><i class="icon icon-user"></i>User 用户名</div>-->
+							<div class="username"><img src="http://zui.sexy/docs/img/img2.jpg" width="24" height="24" class="img-circle" alt="圆形图片" style="margin-top:-3px;margin-right:5px;" />User 用户名</div>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right">
+							<!-- User dropdown menu -->
+							<ul class="nav">
+								<li>
+									<a href="#">
+										<i class="icon icon-list-alt"></i>用户资料
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="label label-badge label-success pull-right">4</span>
+										<i class="icon icon-envelope-alt"></i>站内消息
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="label label-success pull-right">New</span>
+										<i class="icon icon-cog"></i>系统设置
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon icon-question-sign"></i>帮助中心
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon icon-lock"></i>锁屏
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon icon-signout"></i>退出系统
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="#" title="通知" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="true">
+							<i class="icon icon-bell"></i>
+							<span class="badge badge-header badge-danger"></span>
+						</a>
+
+						<!--Notification dropdown menu-->
+						<div class="dropdown-menu dropdown-menu-md mat-message-dropdown">
+							<header>您有 <span>6</span> 条未读消息</header>
+							<div class="mat-message-box">
+								<div class="alert with-icon">
+									<i class="icon-inbox text-muted"></i>
+									<div class="content"><strong>你好!</strong> <a class="alert-link" href="###">有一些内容</a>你可能需要知道。</div>
+								</div>
+								<div class="alert alert-primary with-icon">
+									<i class="icon-star text-primary"></i>
+									<div class="content">
+										<h4>Hello</h4>
+										<p><a href="###">World.</a></p>
+									</div>
+								</div>
+								<div class="alert with-icon alert-success">
+									<i class="icon-ok-sign"></i>
+									<div class="content"><strong>太好了!</strong> 一切已<a class="alert-link" href="###">准备就绪</a>。</div>
+								</div>
+								<div class="alert with-icon alert-info">
+									<i class="icon-info-sign"></i>
+									<div class="content"><strong>Hi!</strong> 这条消息可能<a class="alert-link" href="###">需要你注意</a>。</div>
+								</div>
+								<div class="alert with-icon alert-warning">
+									<i class="icon-frown"></i>
+									<div class="content"><strong>注意!</strong> 看起来遇到<a class="alert-link" href="###">一些问题</a>。</div>
+								</div>
+								<div class="alert with-icon alert-danger">
+									<i class="icon-remove-sign"></i>
+									<div class="content"><strong>不好了!</strong> 确实遇到了问题，请<a class="alert-link" href="###">立即处理</a>吧。</div>
+								</div>
+							</div>
+							<footer>
+								<a href="#" class="btn-link box-block">
+									<i class="icon icon-angle-right icon-lg pull-right"></i>Show All Notifications
+								</a>
+							</footer>
+						</div>
+					</li>
+					<li>
+						<a href="#" title="设置">
+							<i class="icon icon-cog"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" title="退出">
+							<i class="icon icon-signout"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" title="显示/隐藏右边栏">
+							<i class="icon icon-ellipsis-v"></i>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!-- 顶栏 End -->
+		<!-- 中间容器层 Start -->
+		<div id="mat-container">
+			
+			<!-- 左侧边栏 Start -->
+			<div id="mat-side">
+				<!-- 右侧导航菜单 Start -->
+				<nav class="menu" data-toggle="menu" id="mat-nav">
+					<ul class="nav">
+						<li class="header">菜单分类</li>
+						<li class="active">
+							<a href="index.html">
+								<i class="icon-home"></i>
+								<span class="title">首页</span>
+							</a>
+						</li>
+						<li class="nav-parent show">
+							<a href="javascript:;">
+								<i class="icon icon-th-large"></i>
+								<span class="title">界面布局界面布局界面</span>
+							</a>
+							<ul class="nav">
+								<li class="active">
+									<a href="javascript:;">
+										<i class="icon-circle-blank"></i>
+										<span class="title">固定顶栏</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<i class="icon-play-sign"></i>
+										<span class="title">固定底栏</span>
+									</a
+								</li>
+								<li>
+									<a href="javascript:;">
+										<i class="icon-ok-sign"></i>
+										<span class="title">固定左侧</span>
+									</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="javascript:;">
+										<i class="icon-ok-sign"></i>
+										<span class="title">显示右侧</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-parent">
+							<a href="javascript:;">
+								<i class="icon icon-align-left"></i>
+								<span class="title">二级菜单</span>
+							</a>
+							<ul class="nav">
+								<li>
+									<a href="javascript:;">
+										<span class="title">二级菜单 1</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class="title">二级菜单 2</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class="title">二级菜单 3</span>
+									</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="javascript:;">
+										<span class="title">二级菜单 4</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class="title">二级菜单 5</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<i class="icon-trash"></i>
+								<span class="title">回收站</span>
+								<span class="label label-badge">99</span>
+							</a>
+						</li>
+						<li class="header">页面示例</li>
+						<li>
+							<a href="main-iframe.html">
+								<i class="icon icon-columns"></i>
+								<span class="title">右侧 Iframe</span>
+							</a>
+						</li>
+						<li>
+							<a href="login.html">
+								<i class="icon icon-signin"></i>
+								<span class="title">登录页</span>
+							</a>
+						</li>
+						<li>
+							<a href="register.html">
+								<i class="icon icon-edit"></i>
+								<span class="title">注册页</span>
+							</a>
+						</li>
+						<li>
+							<a href="errors.html">
+								<i class="icon icon-warning-sign"></i>
+								<span class="title">错误页</span>
+							</a>
+						</li>
+						<li>
+							<a href="data-table.html">
+								<i class="icon-table"></i>
+								<span class="title">数据表格列表</span>
+							</a>
+						</li>
+						<li>
+							<a href="form-page.html">
+								<i class="icon icon-file-text-o"></i>
+								<span class="title">表单页面</span>
+							</a>
+						</li>
+						<li>
+							<a href="category-tree.html">
+								<i class="icon-list-ul"></i>
+								<span class="title">分类管理</span>
+							</a>
+						</li>
+						<li>
+							<a href="page-view.html">
+								<i class="icon-list-ul"></i>
+								<span class="title">PageView</span>
+							</a>
+						</li>
+						<li class="header">基本控件</li>
+						<li>
+							<a href="icons.html">
+								<i class="icon-star"></i>
+								<span class="title">图标</span>
+							</a>
+						</li>
+						<li>
+							<a href="buttons.html">
+								<i class="icon-bold"></i>
+								<span class="title">按钮</span>
+							</a>
+						</li>
+						<li>
+							<a href="label.html">
+								<i class="icon-tags"></i>
+								<span class="title">标签</span>
+							</a>
+						</li>
+						<li>
+							<a href="menu.html">
+								<i class="icon-list-ul"></i>
+								<span class="title">菜单</span>
+							</a>
+						</li>
+						<li>
+							<a href="form.html">
+								<i class="icon-layout"></i>
+								<span class="title">表单控件</span>
+							</a>
+						</li>
+					</ul>
+					<a href="#" class="btn"><i class="icon-cog"></i> 系统设置</a>
+					<a href="#" class="btn"><i class="icon-off"></i> 退出系统</a>
+				</nav>
+				<!-- 右侧导航菜单 End -->
+			</div>
+			<!-- 左侧边栏 End -->
+			<!-- 主容器层 Start -->
+			<div id="mat-main">
+				<div class="mat-page-title">
+					<h1>控制面板</h1>
+					<div class="text text-muted">
+						<span class="username">XXXXX</span>&nbsp;&nbsp;欢迎回来！上次登录：2016-11-16 10:05:22&nbsp;
+						<span class="caret" data-toggle="tooltip" data-placement="bottom" data-html="true" title="登录IP：127.0.0.1<br/>登录城市：福建省厦门市"></span>
+					</div>
+					<form class="mat-search-box" action="" method="post">
+						<div class="mat-select">
+							<div class="select-text">
+								<span class="text">搜索分类</span>
+								<span class="caret"></span>
+							</div>
+							<select>
+								<option value="" selected>搜索分类</option>
+								<option value="1">搜索分类 1</option>
+								<option value="2">搜索分类 2 </option>
+								<option value="3">搜索分类 3</option>
+							</select>
+						</div>
+						<input type="text" class="form-control search-keyword" placeholder="全站搜索..." />
+						<button class="btn btn-default search-btn" type="button" title="搜索"><i class="icon-search"></i></button>
+					</form>
+				</div>
+				<div class="container-fluid dashboard">
+					<div class="row">
+						<div class="col-xs-3">
+							<div class="panel mat-data-count-view">
+								<div class="panel-body">
+									<i class="icon icon-line-chart"></i>
+									<div class="data">
+										<h1 class="count">46565</h1>
+										<p class="desc">今天新增用户数</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-3">
+							<div class="panel mat-data-count-view">
+								<div class="panel-body">
+									<i class="icon icon-comment-alt"></i>
+									<div class="data">
+										<h1 class="count">8965</h1>
+										<p class="desc">今天新增帖子数</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-3">
+							<div class="panel mat-data-count-view">
+								<div class="panel-body">
+									<i class="icon icon-film"></i>
+									<div class="data">
+										<h1 class="count">1843</h1>
+										<p class="desc">今天新增视频数</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-3">
+							<div class="panel mat-data-count-view">
+								<div class="panel-body">
+									<i class="icon icon-eye-close"></i>
+									<div class="data">
+										<h1 class="count">245</h1>
+										<p class="desc">未审核视频</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6">
+							<div class="panel">
+								<div class="panel-body" style="height: 290px;">
+									<h1 class="mat-panel-title">
+										<strong>统计报表</strong>
+										<span class="right" style="top:-5px;right:-5px;">
+											<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1" style="border:none;">
+												<span class="caret"></span>
+												<span class="sr-only">更多选项</span>
+											</button>
+											<ul class="dropdown-menu pull-right" role="menu">
+												<li><a href="#">选项</a></li>
+												<li><a href="#">另一个选项</a></li>
+												<li><a href="#">更多选项</a></li>
+												<li class="divider"></li>
+												<li><a href="#">特别内容</a></li>
+											</ul>
+										</span>
+									</h1>
+									<div id="index-chart"></div>
+								</div>
+								<div class="panel-footer">
+									<p class="text-right text-muted">最后更新时间：2016-11-17 18:11:20</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-3">
+							<div class="panel">
+								<div class="panel-body" style="height: 290px;">
+									<h1 class="mat-panel-title">
+										<strong>热门话题</strong>
+										<span class="right">
+											<i class="icon icon-refresh"></i>
+										</span>
+									</h1>
+									<ul>
+										<li>
+											<a href="#">#最难喝饮料挑战#&nbsp;<span class="label label-badge label-danger">9567</span></a>
+										</li>
+										<li>
+											<a href="#">#风筒唱歌挑战#&nbsp;<span class="label label-badge label-warning">8672</span></a>
+										</li>
+										<li>
+											<a href="#">#晒出你最丑的几个表情#&nbsp;<span class="label label-badge label-info">7124</span></a>
+										</li>
+										<li>
+											<a href="#">#创意小课堂#</a>
+										</li>
+										<li>
+											<a href="#">#欧美超赞mv#</a>
+										</li>
+										<li>
+											<a href="#">#女生之间的友谊#</a>
+										</li>
+										<li>
+											<a href="#">#眉毛戴眼镜#</a>
+										</li>
+										<li>
+											<a href="#">#boomboom摇#</a>
+										</li>
+										<li>
+											<a href="#">#小水果#</a>
+										</li>
+										<li>
+											<a href="#">#可以吃的美拍#</a>
+										</li>
+									</ul>
+								</div>
+								<div class="panel-footer text-right">
+									<a href="#" class="text-primary">管理话题</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-3">
+							<div class="panel">
+								<div class="panel-body" style="height: 290px;">
+									<h1 class="mat-panel-title">
+										<strong>活跃用户</strong>
+										<span class="right">
+											<i class="icon icon-refresh"></i>
+										</span>
+									</h1>
+								</div>
+								<div class="panel-footer text-right">
+									<a href="#" class="text-primary">管理用户</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6">
+							<div class="panel">
+								<div class="panel-body" style="height: 290px;">
+									<h1 class="mat-panel-title">
+										<strong>版块标题</strong>
+										<span class="right">
+											<i class="icon icon-refresh"></i>
+										</span>
+									</h1>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-3">
+							<div class="panel">
+								<div class="panel-body" style="height: 290px;">
+									<h1 class="mat-panel-title">
+										<strong>版块标题</strong>
+										<span class="right">
+											<i class="icon icon-refresh"></i>
+										</span>
+									</h1>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-3">
+							<div class="panel">
+								<div class="panel-body" style="height: 290px;">
+									<h1 class="mat-panel-title">
+										<strong>版块标题</strong>
+										<span class="right">
+											<i class="icon icon-refresh"></i>
+										</span>
+									</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 主容器层 End -->
+			
+			<!-- 右侧边栏 Start -->
+			<aside id="mat-aside">
+				
+			</aside>
+			<!-- 右侧边栏 End -->
+			
+			<!-- 底栏 Start -->
+			<footer id="mat-footer">
+				<p class="pull-left">当前状态：在线用户 12345</p>
+				<div class="pull-right">
+					&copy;&nbsp;2020 Meitu, Inc.
+				</div>
+			</footer>
+			<!-- 底栏 End -->
+		</div>
+		<!-- 中间容器层 End -->
+	</div>
+	<!-- 整体布局 End -->
+	<script src="http://g.tbcdn.cn/bui/acharts/1.0.15/acharts-min.js"></script>
+			<script src="js/mat.min.js"></script>
+		<script>
+			$(function() {
+				// 初始化 MAT
+				var $MAT = MAT.init();
+				window.$MAT = $MAT;
+
+				// $MAT 实例对象有控制界面的一些方法
+				// $.zui 为 ZUI 框架的 jQuery 扩展对象，包含相应的组件和操作方法
+				console.log($MAT, $.zui.Messager);
+			});
+		</script>
+	<script>
+		$(function() {
+			
+	var msg = new $.zui.Messager('正在获取数据...', {
+		close: true,
+		show : true
+	});
+		
+	var msg = new $.zui.Messager('数据同步成功！', {
+		type: 'success',
+		close: true,
+		show : true
+	});
+	
+	console.log('AChart =>', AChart);
+	
+	function renderChart() {
+		$('#index-chart').html('');
+		var chart = new AChart({
+		  theme : AChart.Theme.SmoothBase,
+		  id : 'index-chart',
+		  width : $('#index-chart').parent().outerWidth(),
+		  height : 240,
+		  plotCfg : {
+			margin : [10,50,80] //画板的边距
+		  },
+		  seriesOptions : { //设置多个序列共同的属性
+			areaCfg : { //如果数据序列未指定类型，则默认为指定了xxCfg的类型，否则都默认是line
+			  markers : {
+				single : true
+			  },
+			  pointStart: 1940,
+			  pointInterval: 1
+			}
+		  },
+		  tooltip : {
+			valueSuffix : '°C',
+			shared : true,
+			crosshairs : true
+		  },
+		  series : [{
+			name: 'USA',
+			data: [null, null, null, null, null, 6 , 11, 32, 110, 235, 369, 640,1005, 1436,
+					2063, 3057, 4618, 6444, 9822, 15468, 20434, 24126,27387, 29459, 31056, 31982,
+					32040, 31233, 29224, 27342, 26662,26956, 27912, 28999, 28965, 27826, 25579,
+					25722, 24826, 24605,24304, 23464, 23708, 24099, 24357, 24237, 24401, 24344,
+					23586,22380, 21004, 17287, 14747, 13076, 12555, 12144, 11009, 10950,
+					10871, 10824, 10577, 10527, 10475, 10421, 10358, 10295, 10104, 23708, 24099, 14546, 6980, , 656, 78, null
+				]
+			}, {
+				name: 'USSR/Russia',
+				data: [null, null, null, null, null, null, null , null , null ,null,5, 25, 50,
+				  120, 150, 200, 426, 660, 869, 1060, 1605, 2471, 3322,4238, 5221, 6129,
+				  7089, 8339, 9399, 10538, 11643, 13092, 14478,15915, 17385, 19055, 21205,
+				  23044, 25393, 27935, 30062, 32049,33952, 35804, 37431, 39197, 45000, 43000,
+				  41000, 39000, 37000,35000, 33000, 31000, 29000, 27000, 25000, 24000, 23000,
+				  22000,21000, 20000, 19000, 18000, 18000, 17000, 16000, 14478,15915, 11060, 8966, 4534, 999, null
+				]
+			}]
+		});
+
+		chart.render();
+
+		console.log(chart);
+	}
+	
+	renderChart();
+	
+	$(window).resize(function() {
+		renderChart();
+	});
+});
+	</script>
+</body>
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="keywords" content="" />
+	<meta name="description" content="公司" />
+	<!--<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" content="0">-->
+	<link rel="stylesheet" href="bower_components/zui/dist/css/zui.min.css">
+	<link rel="stylesheet" href="./css/mat.min.css">
+	<link rel="shortcut icon" href="http://img1.app.meitudata.com/meitushop/favicon.ico" type="image/x-icon" />
+	<title>出错了！HTTP 400</title>
+</head>
+<body>
+	<!-- 整体布局 Start -->
+	<div id="mat-layout" class="min-width header-fixed footer-fixed">
+		
+		<!-- 顶栏 Start -->
+		<header id="mat-header">
+			<a href="/" class="pull-left" id="mat-brand">
+				<img src="images/mat-logo.png" class="brand-logo" />
+				<img src="images/mat-logo-small.png" class="brand-icon" />
+				<div class="brand-title">
+					<div class="brand-text">McnAdmin</div>
+				</div>
+				<small class="version">Beta</small>
+			</a>
+			<nav id="mat-header-nav" data-dropdown="hover">
+				<ul class="nav navbar-nav pull-left">
+					<li class="mat-toggle-side">
+						<a href="javascript:;">
+							<i class="icon icon-bars"></i>
+						</a>
+					</li>
+					<li>
+						<a href="index.html" class="active">
+							<i class="icon icon-home"></i>
+							<span class="text">首页</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="icon icon-stack"></i>
+							<span class="text">内容管理</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="icon icon-bar-chart"></i>
+							<span class="text">统计分析</span>
+						</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="icon icon-picture"></i>
+							<span class="text">素材管理</span> <b class="caret"></b>
+						</a>
+						<div class="dropdown-menu" role="menu">
+							<ul class="nav">
+								<li>
+									<a href="#">
+										<i class="icon icon-shield"></i>
+										<span class="text">权限管理</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon icon-film"></i>
+										<span class="text">视频管理</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon icon-comments-alt"></i>
+										<span class="text">评论管理</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<i class="icon icon-group"></i>
+							<span class="text">用户管理</span>
+						</a>
+					</li>
+					<!-- 导航中的下拉菜单 -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<!--更多&nbsp;<b class="caret"></b>-->
+							<i class="icon icon-ellipsis-h"></i>
+						</a>
+						<div class="dropdown-menu" role="menu">
+							<ul class="nav">
+								<li>
+									<a href="#">
+										<i class="icon icon-shield"></i>
+										<span class="text">权限管理</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon icon-film"></i>
+										<span class="text">视频管理</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon icon-comments-alt"></i>
+										<span class="text">评论管理</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav pull-right">
+					<li class="dropdown">
+						<a href="#" data-toggle="dropdown">
+							<i class="icon icon-globe"></i>
+							<span class="text">Languages</span>
+						</a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">简体中文</a></li>
+							<li><a href="#">繁体中文</a></li>
+							<li><a href="#">English</a></li>
+						</ul>
+					</li>
+					<!-- 导航中的下拉菜单 -->
+					<li id="dropdown-user" class="dropdown">
+						<a href="#" data-toggle="dropdown" class="dropdown-toggle text-right" aria-expanded="true">
+							<!--<div class="username"><i class="icon icon-user"></i>User 用户名</div>-->
+							<div class="username"><img src="http://zui.sexy/docs/img/img2.jpg" width="24" height="24" class="img-circle" alt="圆形图片" style="margin-top:-3px;margin-right:5px;" />User 用户名</div>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right">
+							<!-- User dropdown menu -->
+							<ul class="nav">
+								<li>
+									<a href="#">
+										<i class="icon icon-list-alt"></i>用户资料
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="label label-badge label-success pull-right">4</span>
+										<i class="icon icon-envelope-alt"></i>站内消息
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="label label-success pull-right">New</span>
+										<i class="icon icon-cog"></i>系统设置
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon icon-question-sign"></i>帮助中心
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon icon-lock"></i>锁屏
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon icon-signout"></i>退出系统
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="#" title="通知" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="true">
+							<i class="icon icon-bell"></i>
+							<span class="badge badge-header badge-danger"></span>
+						</a>
+
+						<!--Notification dropdown menu-->
+						<div class="dropdown-menu dropdown-menu-md mat-message-dropdown">
+							<header>您有 <span>6</span> 条未读消息</header>
+							<div class="mat-message-box">
+								<div class="alert with-icon">
+									<i class="icon-inbox text-muted"></i>
+									<div class="content"><strong>你好!</strong> <a class="alert-link" href="###">有一些内容</a>你可能需要知道。</div>
+								</div>
+								<div class="alert alert-primary with-icon">
+									<i class="icon-star text-primary"></i>
+									<div class="content">
+										<h4>Hello</h4>
+										<p><a href="###">World.</a></p>
+									</div>
+								</div>
+								<div class="alert with-icon alert-success">
+									<i class="icon-ok-sign"></i>
+									<div class="content"><strong>太好了!</strong> 一切已<a class="alert-link" href="###">准备就绪</a>。</div>
+								</div>
+								<div class="alert with-icon alert-info">
+									<i class="icon-info-sign"></i>
+									<div class="content"><strong>Hi!</strong> 这条消息可能<a class="alert-link" href="###">需要你注意</a>。</div>
+								</div>
+								<div class="alert with-icon alert-warning">
+									<i class="icon-frown"></i>
+									<div class="content"><strong>注意!</strong> 看起来遇到<a class="alert-link" href="###">一些问题</a>。</div>
+								</div>
+								<div class="alert with-icon alert-danger">
+									<i class="icon-remove-sign"></i>
+									<div class="content"><strong>不好了!</strong> 确实遇到了问题，请<a class="alert-link" href="###">立即处理</a>吧。</div>
+								</div>
+							</div>
+							<footer>
+								<a href="#" class="btn-link box-block">
+									<i class="icon icon-angle-right icon-lg pull-right"></i>Show All Notifications
+								</a>
+							</footer>
+						</div>
+					</li>
+					<li>
+						<a href="#" title="设置">
+							<i class="icon icon-cog"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" title="退出">
+							<i class="icon icon-signout"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" title="显示/隐藏右边栏">
+							<i class="icon icon-ellipsis-v"></i>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!-- 顶栏 End -->
+		<!-- 中间容器层 Start -->
+		<div id="mat-container">
+			
+			<!-- 左侧边栏 Start -->
+			<div id="mat-side">
+				<!-- 右侧导航菜单 Start -->
+				<nav class="menu" data-toggle="menu" id="mat-nav">
+					<ul class="nav">
+						<li class="header">菜单分类</li>
+						<li class="active">
+							<a href="index.html">
+								<i class="icon-home"></i>
+								<span class="title">首页</span>
+							</a>
+						</li>
+						<li class="nav-parent show">
+							<a href="javascript:;">
+								<i class="icon icon-th-large"></i>
+								<span class="title">界面布局界面布局界面</span>
+							</a>
+							<ul class="nav">
+								<li class="active">
+									<a href="javascript:;">
+										<i class="icon-circle-blank"></i>
+										<span class="title">固定顶栏</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<i class="icon-play-sign"></i>
+										<span class="title">固定底栏</span>
+									</a
+								</li>
+								<li>
+									<a href="javascript:;">
+										<i class="icon-ok-sign"></i>
+										<span class="title">固定左侧</span>
+									</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="javascript:;">
+										<i class="icon-ok-sign"></i>
+										<span class="title">显示右侧</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-parent">
+							<a href="javascript:;">
+								<i class="icon icon-align-left"></i>
+								<span class="title">二级菜单</span>
+							</a>
+							<ul class="nav">
+								<li>
+									<a href="javascript:;">
+										<span class="title">二级菜单 1</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class="title">二级菜单 2</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class="title">二级菜单 3</span>
+									</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="javascript:;">
+										<span class="title">二级菜单 4</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class="title">二级菜单 5</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<i class="icon-trash"></i>
+								<span class="title">回收站</span>
+								<span class="label label-badge">99</span>
+							</a>
+						</li>
+						<li class="header">页面示例</li>
+						<li>
+							<a href="main-iframe.html">
+								<i class="icon icon-columns"></i>
+								<span class="title">右侧 Iframe</span>
+							</a>
+						</li>
+						<li>
+							<a href="login.html">
+								<i class="icon icon-signin"></i>
+								<span class="title">登录页</span>
+							</a>
+						</li>
+						<li>
+							<a href="register.html">
+								<i class="icon icon-edit"></i>
+								<span class="title">注册页</span>
+							</a>
+						</li>
+						<li>
+							<a href="errors.html">
+								<i class="icon icon-warning-sign"></i>
+								<span class="title">错误页</span>
+							</a>
+						</li>
+						<li>
+							<a href="data-table.html">
+								<i class="icon-table"></i>
+								<span class="title">数据表格列表</span>
+							</a>
+						</li>
+						<li>
+							<a href="form-page.html">
+								<i class="icon icon-file-text-o"></i>
+								<span class="title">表单页面</span>
+							</a>
+						</li>
+						<li>
+							<a href="category-tree.html">
+								<i class="icon-list-ul"></i>
+								<span class="title">分类管理</span>
+							</a>
+						</li>
+						<li>
+							<a href="page-view.html">
+								<i class="icon-list-ul"></i>
+								<span class="title">PageView</span>
+							</a>
+						</li>
+						<li class="header">基本控件</li>
+						<li>
+							<a href="icons.html">
+								<i class="icon-star"></i>
+								<span class="title">图标</span>
+							</a>
+						</li>
+						<li>
+							<a href="buttons.html">
+								<i class="icon-bold"></i>
+								<span class="title">按钮</span>
+							</a>
+						</li>
+						<li>
+							<a href="label.html">
+								<i class="icon-tags"></i>
+								<span class="title">标签</span>
+							</a>
+						</li>
+						<li>
+							<a href="menu.html">
+								<i class="icon-list-ul"></i>
+								<span class="title">菜单</span>
+							</a>
+						</li>
+						<li>
+							<a href="form.html">
+								<i class="icon-layout"></i>
+								<span class="title">表单控件</span>
+							</a>
+						</li>
+					</ul>
+					<a href="#" class="btn"><i class="icon-cog"></i> 系统设置</a>
+					<a href="#" class="btn"><i class="icon-off"></i> 退出系统</a>
+				</nav>
+				<!-- 右侧导航菜单 End -->
+			</div>
+			<!-- 左侧边栏 End -->
+			<!-- 主容器层 Start -->
+			<div id="mat-main">
+				<div class="container-fluid text-center">
+					<div class="row">
+						<div class="col-xs-6 margin-auto float-none">
+							<br/><br/><br/><br/>
+							<div class="mat-page-title">
+								<h1>HTTP 400</h1>
+								<p class="text text-muted">出错了！访问的页面不存在</p>
+							</div>
+							<hr/>
+							<div class="text-muted">
+								<p>ERR_HTTP_400</p>
+							</div>
+							<div class="text-center">
+								<br/><a href="javascript:history.go(-1);">返回</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 主容器层 End -->
+			
+			<!-- 底栏 Start -->
+			<footer id="mat-footer">
+				<p class="pull-left">当前状态：在线用户 12345</p>
+				<div class="pull-right">
+					&copy;&nbsp;2020 Meitu, Inc.
+				</div>
+			</footer>
+			<!-- 底栏 End -->
+		</div>
+		<!-- 中间容器层 End -->
+	</div>
+	<!-- 整体布局 End -->
+			<script src="js/mat.min.js"></script>
+		<script>
+			$(function() {
+				// 初始化 MAT
+				var $MAT = MAT.init();
+				window.$MAT = $MAT;
+
+				// $MAT 实例对象有控制界面的一些方法
+				// $.zui 为 ZUI 框架的 jQuery 扩展对象，包含相应的组件和操作方法
+				console.log($MAT, $.zui.Messager);
+			});
+		</script>
+</body>
+</html>

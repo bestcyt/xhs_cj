@@ -1,0 +1,12 @@
+.idea/
+/vendor/
+/logs/
+composer.lock
+.project
+.buildpath
+.history
+/Uploads/
+/python/logs/
+/python/venv/
+/python/.venv
+__pycache__

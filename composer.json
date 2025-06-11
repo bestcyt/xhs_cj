@@ -1,0 +1,41 @@
+{
+  "name": "xiaohongshu/dianzan",
+  "description": "xiaohongshu dianzan",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "mutouren",
+      "email": "ranmiaozai@126.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "aliyuncs/oss-sdk-php": "~2.4",
+    "sss/phpframe": "v1.0.1",
+    "endroid/qr-code": "^3.9",
+    "phpoffice/phpspreadsheet": "1.19",
+    "alibabacloud/sdk": "^1.8",
+    "zoujingli/ip2region": "^2.0"
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://mirrors.aliyun.com/composer/"
+    },
+    "sss/phpframe": {
+      "type": "vcs",
+      "url": "git@gitlab.sssyyds.com:basics/phpframe.git"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Mt\\": "src/"
+    },
+    "files": [
+      "src/functions.php",
+      "src/init.php",
+      "src/const.php"
+    ]
+  }
+}

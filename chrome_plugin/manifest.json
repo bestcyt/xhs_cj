@@ -1,0 +1,80 @@
+{
+  "manifest_version": 3,
+  "name": "酷猴小红书马甲插件",
+  "version": "1.0",
+  "permissions": [
+    "cookies",
+    "scripting",
+    "storage",
+    "activeTab",
+    "tabs",
+    "clipboardWrite",
+    "windows",
+    "privacy",
+    "webRequest",
+    "alarms",
+    "webNavigation"
+  ],
+  "incognito": "split",
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "action": {
+    "default_icon": {
+      "16": "assets/images/icons/favicon.png",
+      "48": "assets/images/icons/favicon.png",
+      "128": "assets/images/icons/favicon.png"
+    }
+  },
+  "icons": {
+    "16": "assets/images/icons/favicon.png",
+    "48": "assets/images/icons/favicon.png",
+    "128": "assets/images/icons/favicon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content_pre.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true,
+      "match_about_blank": true
+    },
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": true,
+      "match_about_blank": true
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/images/*.png",
+        "assets/images/*.jpg",
+        "assets/images/*.gif",
+        "content_body.js",
+        "content_no_media.js",
+        "offline.html",
+        "offline.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'"
+  }
+}
