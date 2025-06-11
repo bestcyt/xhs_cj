@@ -5,8 +5,8 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "mutouren",
-      "email": "ranmiaozai@126.com"
+      "name": "mumaren",
+      "email": "850160757@qq.com"
     }
   ],
   "require": {
@@ -25,7 +25,7 @@
     },
     "sss/phpframe": {
       "type": "vcs",
-      "url": "git@gitlab.sssyyds.com:basics/phpframe.git"
+      "url": "git@github.com:bestcyt/phpframe.git"
     }
   },
   "autoload": {
