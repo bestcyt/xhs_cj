@@ -25,7 +25,7 @@
     },
     "bestcyt/phpframe": {
       "type": "vcs",
-      "url": "git@github.com:bestcyt/phpframe.git"
+      "url": "https://github.com/bestcyt/phpframe.git"
     }
   },
   "autoload": {
